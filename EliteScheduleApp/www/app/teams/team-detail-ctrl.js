@@ -1,9 +1,9 @@
 (function () {
 	'use strict';
 
-	angular.module('eliteApp').controller('teamDetailCtrl', ['$stateParams','eliteApi', teamDetailCtrl]);
+	angular.module('eliteApp').controller('TeamDetailCtrl', ['$stateParams','eliteApi', TeamDetailCtrl]);
 
-	function teamDetailCtrl($stateParams, eliteApi) {
+	function TeamDetailCtrl($stateParams, eliteApi) {
 		var vm = this;
 		console.log("$stateParams", $stateParams);
 		vm.teamId = Number($stateParams.id);
@@ -36,7 +36,7 @@
                     .value();
 
         vm.teamStanding = _.chain(data.standings)
-                   .flatten("divisionStandings")
+                   .map("divisionStandings").flatten()
                    .find({ "teamId": vm.teamId })
                    .value();
 
@@ -59,6 +59,8 @@
                 vm.following = !vm.following;
             }
         };
+
+
 
 
         function isTeamInGame(item){
