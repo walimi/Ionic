@@ -17,7 +17,7 @@
 
         function getLeagueData(callback) {
         	debugger;
-        	$http.get("http://elite-schedule.net/api/leaguedata/" + currentLeagueId)
+        	$http.get("http://elite-schedule.net/api/leaguedata/2037")// + currentLeagueId)
 	        	.success(function(data, status) {
 	        		console.log("Received league data via HTTP", data, status);
 	        		callback(data);
