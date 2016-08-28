@@ -25,7 +25,7 @@ More info on this can be found on the Ionic [Getting Started](http://ionicframew
 Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
 
 
-
+## Commit Related
 Commit 5d201bc305402f84b1e366db651b82a7885042e7 included running the following command
 ```bash
 $ bower install lodash --save-dev
