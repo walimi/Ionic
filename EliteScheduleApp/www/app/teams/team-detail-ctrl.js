@@ -1,9 +1,9 @@
 (function () {
 	'use strict';
 
-	angular.module('eliteApp').controller('TeamDetailCtrl', ['$stateParams','eliteApi', TeamDetailCtrl]);
+	angular.module('eliteApp').controller('TeamDetailCtrl', ['$stateParams','eliteApi', '$ionicPopup', TeamDetailCtrl]);
 
-	function TeamDetailCtrl($stateParams, eliteApi) {
+	function TeamDetailCtrl($stateParams, eliteApi, $ionicPopup) {
 		var vm = this;
 		console.log("$stateParams", $stateParams);
 		vm.teamId = Number($stateParams.id);
@@ -43,27 +43,22 @@
 
        	vm.following = false;
 
-        // Commenting this out as this out pasted from completed version of the exercises file. 
-        // vm.toggleFollow = function(){
+        vm.toggleFollow = function(){
 
-        //     if (vm.following) {
-        //         var confirmPopup = $ionicPopup.confirm({
-        //             title: 'Unfollow?',
-        //             template: 'Are you sure you want to unfollow?'
-        //         });
-        //         confirmPopup.then(function(res) {
-        //             if(res) {
-        //                 vm.following = !vm.following;
-        //             }
-        //         });
-        //     } else{
-        //         vm.following = !vm.following;
-        //     }
-        // };
-
-        vm.toggleFollow = function () {
-            vm.following = !vm.following;
-        }
+            if (vm.following) {
+                var confirmPopup = $ionicPopup.confirm({
+                    title: 'Unfollow?',
+                    template: 'Are you sure you want to unfollow?'
+                });
+                confirmPopup.then(function(res) {
+                    if(res) {
+                        vm.following = !vm.following;
+                    }
+                });
+            } else{
+                vm.following = !vm.following;
+            }
+        };
 
 
         function isTeamInGame(item){
