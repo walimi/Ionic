@@ -43,24 +43,27 @@
 
        	vm.following = false;
 
-        vm.toggleFollow = function(){
+        // Commenting this out as this out pasted from completed version of the exercises file. 
+        // vm.toggleFollow = function(){
 
-            if (vm.following) {
-                var confirmPopup = $ionicPopup.confirm({
-                    title: 'Unfollow?',
-                    template: 'Are you sure you want to unfollow?'
-                });
-                confirmPopup.then(function(res) {
-                    if(res) {
-                        vm.following = !vm.following;
-                    }
-                });
-            } else{
-                vm.following = !vm.following;
-            }
-        };
+        //     if (vm.following) {
+        //         var confirmPopup = $ionicPopup.confirm({
+        //             title: 'Unfollow?',
+        //             template: 'Are you sure you want to unfollow?'
+        //         });
+        //         confirmPopup.then(function(res) {
+        //             if(res) {
+        //                 vm.following = !vm.following;
+        //             }
+        //         });
+        //     } else{
+        //         vm.following = !vm.following;
+        //     }
+        // };
 
-
+        vm.toggleFollow = function () {
+            vm.following = !vm.following;
+        }
 
 
         function isTeamInGame(item){
