@@ -6,11 +6,13 @@
 	function LeaguesCtrl($state, eliteApi) {
 		var vm = this;
 
-		var leagues = eliteApi.getLeagues();
-		vm.leagues = leagues;
+		eliteApi.getLeagues(function(data) {
+			vm.leagues = data;	
+		});
+		
 
-		vm.selectLeague = function(leagueId) {
-			//TODO: select the correct league
+		vm.selectLeague = function(id) {
+			eliteApi.setLeagueId(id);
 			$state.go("app.teams");
 		};
 
