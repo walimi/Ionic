@@ -9,15 +9,13 @@ We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to cre
 
 For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
 
-```bash
-$ npm install -g ionic
-```
+	npm install -g ionic
 
 Then run: 
 
-```bash
-$ ionic start myProject tabs
-```
+
+	ionic start myProject tabs
+
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
 
@@ -27,9 +25,9 @@ Issues have been disabled on this repo, if you do find an issue or have a questi
 
 ## Commit Related
 Commit 5d201bc305402f84b1e366db651b82a7885042e7 included running the following command
-```bash
-$ bower install lodash --save-dev
-```
+
+	bower install lodash --save-dev
+
 
 
 ## Angular Cache Overview
@@ -39,4 +37,10 @@ $ bower install lodash --save-dev
 -	Configurable storage options (e.g., Local Storage)
 -	Expiration Events
 
+
+## Angular Cache - Creating and Configuring
+
+Ran the following command to install angular-cache:
+
+	bower install angular-cache --save-dev
 
