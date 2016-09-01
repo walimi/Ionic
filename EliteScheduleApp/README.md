@@ -30,3 +30,13 @@ Commit 5d201bc305402f84b1e366db651b82a7885042e7 included running the following c
 ```bash
 $ bower install lodash --save-dev
 ```
+
+
+## Angular Cache Overview
+
+-	Angular-Cache is a replacement for Angular's $cacheFactory
+-	Configurable TTL
+-	Configurable storage options (e.g., Local Storage)
+-	Expiration Events
+
+
