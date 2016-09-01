@@ -2,9 +2,9 @@
 
 	'use strict';
 
-	angular.module('eliteApp').factory('eliteApi', ['$http', '$q',eliteApi]);
+	angular.module('eliteApp').factory('eliteApi', ['$http', '$q', '$ionicLoading', '$timeout', eliteApi]);
 
-	function eliteApi($http, $q) {
+	function eliteApi($http, $q, $ionicLoading, $timeout) {
 		
 		var currentLeagueId;
        
@@ -26,14 +26,21 @@
         function getLeagueData() {
         	var deferred = $q.defer();
 
+        	$ionicLoading.show({template: "Loading ..."});
+
         	// Currently hard-coding the currentLeagueId value as currentLeagueId is undefined when running it.
         	$http.get("http://elite-schedule.net/api/leaguedata/2037")// + currentLeagueId)
 	        	.success(function(data, status) {
 	        		console.log("Received league data via HTTP", data, status);
-	        		deferred.resolve(data);
+	        		$timeout(function(){
+	        			$ionicLoading.hide();
+	        			deferred.resolve(data);	
+	        		}, 5000);
+	        		
 	        	})
 	        	.error(function(){
 	        		console.log("Error while making HTTP call.");
+	        		$ionicLoading.hide();
 	        		deferred.reject();
 	        	});
         	return deferred.promise;
