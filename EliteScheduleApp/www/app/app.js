@@ -1,6 +1,6 @@
-angular.module("eliteApp", ["ionic", "angular-data.DSCacheFactory"])
+angular.module("eliteApp", ["ionic", "angular-cache"])
 
-.run(function($ionicPlatform, DSCacheFactory) {
+.run(function($ionicPlatform, CacheFactory) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -15,10 +15,10 @@ angular.module("eliteApp", ["ionic", "angular-data.DSCacheFactory"])
     }
 
     // Add a few caches
-    DSCacheFactory("leagueDataCache", { storageMode: "localStorage", maxAge: 5000, deleteOnExpire: "aggressive"});
-    DSCacheFactory("leaguesCache", { storageMode: "localStorage", maxAge: 5000, deleteOnExpire: "aggressive"});
-    DSCacheFactory("myTeamsCache", { storageMode: "localStorage"});
-    DSCacheFactory("staticCache", { storageMode: "localStorage"});
+    CacheFactory("leagueDataCache", { storageMode: "localStorage", maxAge: 30000, deleteOnExpire: "aggressive"});
+    CacheFactory("leaguesCache", { storageMode: "localStorage", maxAge: 30000, deleteOnExpire: "aggressive"});
+    CacheFactory("myTeamsCache", { storageMode: "localStorage"});
+    CacheFactory("staticCache", { storageMode: "localStorage"});
 
 
   });

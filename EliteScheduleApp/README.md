@@ -43,4 +43,8 @@ Commit 5d201bc305402f84b1e366db651b82a7885042e7 included running the following c
 Ran the following command to install angular-cache:
 
 	bower install angular-cache --save-dev
+	
+## Angular Cache - Implementing Caches
+
+The angular-cache version the author used is out-of-date. Instead of using DSCacheFactory, I had to use CacheFactory. 	
 
