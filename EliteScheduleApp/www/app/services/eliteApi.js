@@ -43,10 +43,10 @@
                 function getLeagueData() {
                 	var deferred = $q.defer(),
                             cacheKey = "leagueData-" + currentLeagueId, 
-                            leagueData = self.leagueDataCache(cacheKey);
+                            leagueData = self.leagueDataCache.get(cacheKey);
 
                         if(leagueData) {
-                                console.log("Found data in the cache", leaguesData);
+                                console.log("Found data in the cache", leagueData);
                                 deferred.resolve(leagueData);
                         } else {
                                 $ionicLoading.show({template: "Loading ..."});
