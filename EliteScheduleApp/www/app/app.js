@@ -15,8 +15,8 @@ angular.module("eliteApp", ["ionic", "angular-cache"])
     }
 
     // Add a few caches
-    CacheFactory("leagueDataCache", { storageMode: "localStorage", maxAge: 30000, deleteOnExpire: "aggressive"});
-    CacheFactory("leaguesCache", { storageMode: "localStorage", maxAge: 30000, deleteOnExpire: "aggressive"});
+    CacheFactory("leagueDataCache", { storageMode: "localStorage", maxAge: 100000, deleteOnExpire: "aggressive"});
+    CacheFactory("leaguesCache", { storageMode: "localStorage", maxAge: 100000, deleteOnExpire: "aggressive"});
     CacheFactory("myTeamsCache", { storageMode: "localStorage"});
     CacheFactory("staticCache", { storageMode: "localStorage"});
 
