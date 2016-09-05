@@ -54,10 +54,19 @@ angular.module('ngApp', ['ngCordova', 'ionic'])
                   templateUrl: "app/vibration/vibration.html"
               }
           }
+      })
+      
+      .state('app.network', {
+          url: "/network",
+          views: {
+              'menuContent': {
+                  templateUrl: "app/network/network.html"
+              }
+          }
       });
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('app/vibration');
+    $urlRouterProvider.otherwise('app/network');
 });
 
