@@ -81,11 +81,20 @@ angular.module('ngApp', ['ngCordova', 'ionic'])
                   templateUrl: "app/camera/camera.html"
               }
           }
+      })
+      
+      .state('app.barcode-scanner', {
+          url: "/barcode-scanner",
+          views: {
+              'menuContent': {
+                  templateUrl: "app/barcode-scanner/barcode-scanner.html"
+              }
+          }
       });
 
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('app/camera');
+    $urlRouterProvider.otherwise('app/barcode-scanner');
 });
 
