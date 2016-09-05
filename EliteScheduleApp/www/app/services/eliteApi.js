@@ -5,6 +5,12 @@
 	angular.module('eliteApp').factory('eliteApi', ['$http', '$q', '$ionicLoading', 'CacheFactory', eliteApi]);
 
 	function eliteApi($http, $q, $ionicLoading, CacheFactory) {
+
+                // Add a few caches
+                CacheFactory("leagueDataCache", { storageMode: "localStorage", maxAge: 100000, deleteOnExpire: "aggressive"});
+                CacheFactory("leaguesCache", { storageMode: "localStorage", maxAge: 100000, deleteOnExpire: "aggressive"});
+                CacheFactory("myTeamsCache", { storageMode: "localStorage"});
+                CacheFactory("staticCache", { storageMode: "localStorage"});
 		
 		
                 self.leaguesCache = CacheFactory.get("leaguesCache");

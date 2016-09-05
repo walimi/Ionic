@@ -65,9 +65,9 @@ The angular-cache version the author used is out-of-date. Instead of using DSCac
 
 ### Installing Google Maps for Angular
 
-To install Google Maps for Angular run the following command. 
+To install Google Maps for Angular run the following command. Note that I had to install version 1.1.8 of the Google Maps package. When I installe latest version I ran into issues. 
 
-	bower install angular-google-maps --save-dev
+	bower install angular-google-maps#1.1.8 --save-dev
 	
 
 

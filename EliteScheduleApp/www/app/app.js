@@ -13,14 +13,6 @@ angular.module("eliteApp", ["ionic", "angular-cache", "google-maps"])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
-
-    // Add a few caches
-    CacheFactory("leagueDataCache", { storageMode: "localStorage", maxAge: 100000, deleteOnExpire: "aggressive"});
-    CacheFactory("leaguesCache", { storageMode: "localStorage", maxAge: 100000, deleteOnExpire: "aggressive"});
-    CacheFactory("myTeamsCache", { storageMode: "localStorage"});
-    CacheFactory("staticCache", { storageMode: "localStorage"});
-
-
   });
 })
 
@@ -104,6 +96,15 @@ angular.module("eliteApp", ["ionic", "angular-cache", "google-maps"])
 			}
 		}
 	})	
+
+	.state('app.location-map', {
+		url: "/location-map/:id",
+		views: {
+			"mainContent": {
+				templateUrl: "app/locations/location-map.html"
+			}
+		}
+	})
 
 	.state('app.rules', {
 		url: "/rules",
