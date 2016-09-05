@@ -28,4 +28,4 @@ content.min.js:1 XHR finished loading: GET "chrome-extension://mgijmajocgfcbeboa
 
 ### Resolution
 
-Reached out to the author. 
+It turns out that the JSON data returned from the HTTP service doesn not contain data for all teams. 

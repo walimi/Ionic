@@ -13,7 +13,7 @@
                 .map("divisionTeams").flatten()
                 .find({"id": vm.teamId})
                 .value();
-
+            console.log("teamId", vm.teamId);    
             vm.teamName = team.name;
 
 
