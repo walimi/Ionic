@@ -132,7 +132,13 @@ and then type the following command:
 
 	sass --watch scss/app.scss:css/app.css
 	
-This will watch any changes to `app.scss` file in `scss` folder and puts the changes to `app.css` file in `css` folder. 			
+This will watch any changes to `app.scss` file in `scss` folder and puts the changes to `app.css` file in `css` folder.
+
+### App Metadata and Icons
+
+#### Custom Icon
+
+To create a custom icon visit `https://makeappicon.com` to create icons for your app. You can then replace the `icon.png` located in `\platforms\android\res\drawable-hdpi` with the new icon. 			
 
 
 
