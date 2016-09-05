@@ -82,4 +82,15 @@ To install Google Maps for Angular run the following command. Note that I had to
 For driving directions functionality to work you need to deploy the app to an actual phone. Using it through the browser does not work.
 
 
+## Customizing Ionic
+
+-	Custom markdown directive
+-	Customizing with CSS
+-	SASS
+-	App Metadata and Icons
+
+
+
+
+
 
