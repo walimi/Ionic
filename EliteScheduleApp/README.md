@@ -122,8 +122,17 @@ In Mac OS X, you may need to run the command as `sudo`.
 To see the version of SASS installed type:
 
 	sass -v
-		
+### Implementing SASS Changes
 
+To watch for SASS changes change directory to:
+
+	cd www\lib\ionic
+	
+and then type the following command:
+
+	sass --watch scss/app.scss:css/app.css
+	
+This will watch any changes to `app.scss` file in `scss` folder and puts the changes to `app.css` file in `css` folder. 			
 
 
 
