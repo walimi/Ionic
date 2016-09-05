@@ -95,7 +95,16 @@ The most common JavaScript directive library to use when dealing with Markdown i
 
 	bower install showdown#0.3.1 --save-dev
 	
-Note that we're installing `v.0.3.1` of the library. 	
+Note that we're installing `v.0.3.1` of the library. 
+
+### SASS Overview
+
+-	CSS Pre-processing
+-	Variables
+-	Nesting
+-	Partials
+-	Mixins
+-	... and more!	
 
 
 
