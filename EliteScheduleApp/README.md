@@ -185,4 +185,13 @@ AngularJS Services that drastically simplify using Cordova plugins and native fe
 
 [ngCordova](http://ngcordova.com "ngCordova")
 
+### Installation and Setup for ngCordova
+
+You can install `ngCordova` by running the following command:
+
+	bower install ngCordova
+	
+Note that I ran this command outside of the `EliteScheduleApp` folder and created separate project named ngCordovaDemo. 	
+	
+
 	
