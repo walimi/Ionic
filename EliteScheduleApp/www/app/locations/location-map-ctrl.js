@@ -34,5 +34,9 @@
 
 		});
 
+		vm.locationClicked = function(marker) {
+			window.location = "geo:" + marker.latitude + ", " + marker.longitude + ";u=35";
+		};
+
 	}
 })();

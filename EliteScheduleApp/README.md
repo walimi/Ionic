@@ -19,6 +19,13 @@ Then run:
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
 
+## Launching the Application in a Browser
+
+To launch the application in a browser type the following command from where the application is:
+
+	ionic serve
+
+This command will launch the Google Chrome browser and display the application. Note that you may need to run the command as `sudo` when using Mac OS X.
 
 ## Commit Related
 Commit 5d201bc305402f84b1e366db651b82a7885042e7 included running the following command
@@ -69,6 +76,10 @@ To install Google Maps for Angular run the following command. Note that I had to
 
 	bower install angular-google-maps#1.1.8 --save-dev
 	
+	
+### Driving Directions
+
+For driving directions functionality to work you need to deploy the app to an actual phone. Using it through the browser does not work.
 
 
 
