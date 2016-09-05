@@ -89,7 +89,13 @@ For driving directions functionality to work you need to deploy the app to an ac
 -	SASS
 -	App Metadata and Icons
 
+### Custom Markdown Directive 
 
+The most common JavaScript directive library to use when dealing with Markdown is called Showdown. Install the Showdown JavaScript library by runnig the following bower command:
+
+	bower install showdown#0.3.1 --save-dev
+	
+Note that we're installing `v.0.3.1` of the library. 	
 
 
 
