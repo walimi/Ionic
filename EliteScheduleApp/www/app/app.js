@@ -1,4 +1,4 @@
-angular.module("eliteApp", ["ionic", "angular-cache"])
+angular.module("eliteApp", ["ionic", "angular-cache", "google-maps"])
 
 .run(function($ionicPlatform, CacheFactory) {
   $ionicPlatform.ready(function() {

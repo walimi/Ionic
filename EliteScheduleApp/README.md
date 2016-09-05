@@ -19,9 +19,6 @@ Then run:
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
-
 
 ## Commit Related
 Commit 5d201bc305402f84b1e366db651b82a7885042e7 included running the following command
@@ -47,4 +44,31 @@ Ran the following command to install angular-cache:
 ## Angular Cache - Implementing Caches
 
 The angular-cache version the author used is out-of-date. Instead of using DSCacheFactory, I had to use CacheFactory. 	
+
+## Mapping
+
+### Overview
+-	Google Maps for Angular - Introduction
+-	Installation and Setup
+-	Implementation
+-	Markers
+-	Driving Directions
+
+### Google Maps for Angular
+
+-	Angular-friendly Google Maps
+-	Markers and Labels
+-	Center/Zoom
+-	Layers
+-	Polylines/Circles/Polygons
+-	Events
+
+### Installing Google Maps for Angular
+
+To install Google Maps for Angular run the following command. 
+
+	bower install angular-google-maps --save-dev
+	
+
+
 
