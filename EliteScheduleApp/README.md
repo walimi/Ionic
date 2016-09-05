@@ -104,7 +104,25 @@ Note that we're installing `v.0.3.1` of the library.
 -	Nesting
 -	Partials
 -	Mixins
--	... and more!	
+-	... and more!
+
+
+### Installing SASS
+
+You can find additional information using SASS with Ionic at the following URL:
+
+[Customizing Ionic with SASS](http://www.ionicframework.com/tutorials/customizing-ionic-with-sass/ "Customizing Ionic with SASS")	
+
+To install SASS on Windows machine you first need to install Ruby. Follow the instructions in the above link to install Ruby and then run the following command to install SASS. 
+
+	gem install sass
+	
+In Mac OS X, you may need to run the command as `sudo`. 
+
+To see the version of SASS installed type:
+
+	sass -v
+		
 
 
 
