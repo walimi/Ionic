@@ -72,11 +72,20 @@ angular.module('ngApp', ['ngCordova', 'ionic'])
                   templateUrl: "app/device/device.html"
               }
           }
+      })
+      
+      .state('app.camera', {
+          url: "/camera",
+          views: {
+              'menuContent': {
+                  templateUrl: "app/camera/camera.html"
+              }
+          }
       });
 
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('app/device');
+    $urlRouterProvider.otherwise('app/camera');
 });
 
