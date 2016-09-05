@@ -45,55 +45,10 @@ angular.module('ngApp', ['ngCordova', 'ionic'])
                   templateUrl: "app/dialogs/dialogs.html"
               }
           }
-      })
-
-    .state('app.network', {
-        url: "/network",
-        views: {
-            'menuContent': {
-                templateUrl: "app/network/network.html"
-            }
-        }
-    })
-
-    .state('app.device', {
-        url: "/device",
-        views: {
-            'menuContent': {
-                templateUrl: "app/device/device.html"
-            }
-        }
-    })
-
-    .state('app.barcode-scanner', {
-        url: "/barcode-scanner",
-        views: {
-            'menuContent': {
-                templateUrl: "app/barcode-scanner/barcode-scanner.html"
-            }
-        }
-    })
-
-    .state('app.camera', {
-        url: "/camera",
-        views: {
-            'menuContent': {
-                templateUrl: "app/camera/camera.html"
-            }
-        }
-    })
-
-    .state('app.vibration', {
-        url: "/vibration",
-        views: {
-            'menuContent': {
-                templateUrl: "app/vibration/vibration.html"
-            }
-        }
-    });
+      });
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/home');
+    $urlRouterProvider.otherwise('app/home');
 });
 
