@@ -140,5 +140,49 @@ This will watch any changes to `app.scss` file in `scss` folder and puts the cha
 
 To create a custom icon visit `https://makeappicon.com` to create icons for your app. You can then replace the `icon.png` located in `\platforms\android\res\drawable-hdpi` with the new icon. 			
 
+## ngCordova
+
+`ngCordova` was developed by the Ionic team. 
+
+### What is a ngCordova?
+
+AngularJS Services that drastically simplify using Cordova plugins and native features. 
+
+### Why ngCordova?
+
+-	Simplify confusing Cordova APIs
+-	Provide promise based API
+-	Provide AngularJS-friendly API
 
 
+### ngCordova Plugins
+
+-	Barcode Scanner
+-	Camera
+-	Contacts
+-	Device
+-	Device Motion
+-	Device Orientation
+-	Dialogs
+-	File
+-	Geolocation
+-	Globalization
+-	Network
+-	PIN Dialog
+-	Push
+-	Social Sharing
+-	Spinner Dialog
+-	Splash Screen
+-	Status Bar
+-	Toast
+-	Vibration
+-	Capture 
+-	... and more!
+
+
+### ngCordova Website
+
+
+[ngCordova](http://ngcordova.com "ngCordova")
+
+	
